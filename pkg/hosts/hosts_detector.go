@@ -311,7 +311,7 @@ func (hd *HostsDetector) WriteHostsFile(results []HostResult) error {
 	currentTime := time.Now().Format("2006-01-02 15:04:05")
 	fmt.Fprintf(writer, "# Hosts\n")
 	fmt.Fprintf(writer, "# 更新时间: %s\n", currentTime)
-	fmt.Fprintf(writer, "# 项目地址: https://github.com/ineo6/hosts\n")
+	fmt.Fprintf(writer, "# 项目地址: https://github.com/Garretqaq/hosts-server\n")
 	fmt.Fprintf(writer, "\n")
 
 	// 写入hosts条目
@@ -337,7 +337,7 @@ func (hd *HostsDetector) GenerateHostsContent(results []HostResult) string {
 	currentTime := time.Now().Format("2006-01-02 15:04:05")
 	content.WriteString("# Hosts\n")
 	content.WriteString(fmt.Sprintf("# 更新时间: %s\n", currentTime))
-	content.WriteString("# 项目地址: https://github.com/ineo6/hosts\n")
+	content.WriteString("# 项目地址: https://github.com/Garretqaq/hosts-server\n")
 	content.WriteString("\n")
 
 	// 写入hosts条目
